@@ -395,6 +395,7 @@ document.body.classList.add("loading");
     <div class="exam-selector-card">
         <h3>Select Your Examination</h3>
         <select id="examPicker">
+            <option value="ai_data">SA - AI and Data Technologies</option>
             <option value="snowflake">SnowPro Core/Assoc./Pro Certification</option>
             <option value="databricks">Databricks Data Engineer</option>
             <option value="python_pySpark">Python & PySpark Engineering</option>
@@ -424,6 +425,18 @@ document.body.classList.add("loading");
         <a href="practice.html">💻 SQL Lab</a>
         <a href="analytics.html">📊 Analytics</a>
     </div>
+
+    <div id="ai_data-cloud" class="cloud-section" style="background: #0f172a; color: white;">
+            <h2 class="doc-header" data-doc="ai_data-cloud" style="color: #38bdf8;cursor:pointer;">AI & Data Technologies Cloud</h2>
+        <div class="search-box"><input id="aiDataSearch" placeholder="Search AI Data (RAG, Shuffle...)" style="background: #1e293b; color: white;"></div>
+        <div class="cloud-display" id="aiDataCloud"></div>
+        <div class="legend">
+            <span class="rag">RAG</span><span class="infra">Infra</span>
+            <span class="optim">Optim</span><span class="agent" style="background: #f59e0b;">Agents</span>
+            <span class="db-arch">Architecture</span><span class="db-delta">Delta</span>
+            <span class="db-spark">Spark</span><span class="db-stream">Streaming</span>
+        </div>
+    </div> 
     <div id="mongodb-cloud" class="cloud-section" style="background: #f1f5f9;">
     <h2 class="doc-header" data-doc="mongodb-cloud" style="color: #13aa52;cursor:pointer;">MongoDB Atlas Cloud</h2>
     <div class="search-box"><input id="mgSearch" placeholder="Search MongoDB..."></div>
@@ -443,8 +456,7 @@ document.body.classList.add("loading");
      <span class="r-perf">Performance</span>
     </div>
 </div>
-
-    <div id="databricks-cloud" class="cloud-section" style="background: #f4f6f8;">
+<div id="databricks-cloud" class="cloud-section" style="background: #f4f6f8;">
         <h2 class="doc-header" data-doc="databricks-cloud" style="color: #ff3621; cursor:pointer;">
   Databricks Lakehouse Cloud 📘
 </h2>
@@ -640,6 +652,11 @@ window.onclick = function(event) {
   }
 }    
 const docMap = {
+    
+  "ai_data-cloud": {
+    file: "docs/AI_Data_Solution_Architect_readme.md", // or ai_llm_readme.md if you create later
+    title: "AI and Data Technologies Architecture"
+  },
   "react-cloud": {
     file: "docs/react_readme.md",
     title: "React Frontend Documentation"
@@ -1379,6 +1396,7 @@ const eaKeywords = [
     // Initialize all
     document.addEventListener('DOMContentLoaded', () => {
         // Render
+       renderCloud("aiDataCloud", [...aiKeywords, ...dataArchitectKeywords], "ai_data"); 
         renderCloud("dbCloud", dbKeywords, "databricks");
         renderCloud("aiCloud", aiKeywords, "ai");
         renderCloud("javaCloud", javaKeywords, "java");
@@ -1403,6 +1421,7 @@ const eaKeywords = [
             });
         };
         // Search Binding
+        bindSearch("aiDataSearch", "aiDataCloud", [...aiKeywords, ...dataArchitectKeywords], "ai_data");
         bindSearch("dbSearch", "dbCloud", dbKeywords, "databricks");
         bindSearch("aiSearch", "aiCloud", aiKeywords, "ai");
         bindSearch("javaSearch", "javaCloud", javaKeywords, "java");
