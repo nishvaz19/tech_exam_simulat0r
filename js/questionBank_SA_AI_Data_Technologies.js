@@ -4,6 +4,20 @@ SOLUTION ARCHITECT - DATA AND AI TECHNOLOGIES
 
 const questionBank = [
 {
+id:0,
+difficulty:"easy",
+category:"architecture",
+question:"What is the primary use of a Databricks solution?",
+options:[
+"Serve OLTP and ACID transactions",
+"Support analytics and reporting",
+"Replace application databases",
+"The primary use of a Databricks solution is to unify data engineering, data science, machine learning, and business analytics into a single, cloud-based platform built around the Data Lakehouse architecture"
+],
+answer:3,
+explanation:"A Databricks solution is primarily used to unify an organization's data engineering, data science, machine learning, and business intelligence workloads onto a single cloud-based data lakehouse platform, thereby eliminating data silos and enabling teams to collaboratively build, scale, and govern everything from traditional analytics to advanced artificial intelligence applications."
+},
+{
 id:1,
 difficulty:"easy",
 category:"architecture",
