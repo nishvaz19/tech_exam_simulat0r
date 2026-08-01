@@ -1,6 +1,5 @@
 /* ======================================================
 SOLUTION ARCHITECT - DATA AND AI TECHNOLOGIES
-PART 1 (Questions 1-25)
 ====================================================== */
 
 const questionBank = [
@@ -2101,7 +2100,903 @@ options:[
 answer:1,
 explanation:"Asynchronous messaging decouples services, improving scalability, resilience and fault tolerance."
 },  
-  
+ {
+id:141,
+difficulty:"hard",
+category:"databricks",
+question:"A Databricks cluster spends nearly 8 minutes starting before every scheduled ETL job. Which approach best reduces overall execution time while keeping costs low?",
+options:[
+"Use an always-on all-purpose cluster",
+"Enable cluster pools with job clusters",
+"Disable auto termination",
+"Increase driver memory"
+],
+answer:1,
+explanation:"Cluster Pools keep pre-warmed VM instances available, significantly reducing cluster startup time while retaining the cost benefits of ephemeral job clusters."
+},
+
+{
+id:142,
+difficulty:"hard",
+category:"databricks",
+question:"Your Delta table has over 25 million small files. Besides OPTIMIZE, what architectural change should be considered?",
+options:[
+"Increase notebook timeout",
+"Review ingestion frequency and file sizing strategy",
+"Use larger driver node",
+"Disable Delta transaction logs"
+],
+answer:1,
+explanation:"Generating appropriately sized files during ingestion prevents excessive file fragmentation."
+},
+
+{
+id:143,
+difficulty:"hard",
+category:"spark",
+question:"Which Spark optimization reduces unnecessary data movement before joins?",
+options:[
+"Predicate Pushdown",
+"Broadcast Join",
+"Column Pruning",
+"Partition Pruning"
+],
+answer:3,
+explanation:"Partition pruning minimizes data scanned by reading only relevant partitions."
+},
+
+{
+id:144,
+difficulty:"hard",
+category:"spark",
+question:"A Spark Structured Streaming job begins falling behind incoming Kafka messages. What should be checked first?",
+options:[
+"Dashboard color",
+"Processing latency and batch duration",
+"Notebook revision history",
+"Workspace permissions"
+],
+answer:1,
+explanation:"If processing time exceeds ingestion time, backlog accumulates."
+},
+
+{
+id:145,
+difficulty:"hard",
+category:"architecture",
+question:"What is the primary purpose of a Medallion Architecture?",
+options:[
+"Improve UI performance",
+"Organize data quality into Bronze, Silver and Gold layers",
+"Increase VM memory",
+"Reduce notebook count"
+],
+answer:1,
+explanation:"The Medallion Architecture progressively improves data quality and usability across layers."
+},
+
+{
+id:146,
+difficulty:"hard",
+category:"architecture",
+question:"Which data quality dimension verifies that all required records are present?",
+options:[
+"Accuracy",
+"Completeness",
+"Consistency",
+"Validity"
+],
+answer:1,
+explanation:"Completeness measures whether expected records and attributes are available."
+},
+
+{
+id:147,
+difficulty:"hard",
+category:"aws",
+question:"A CloudFront distribution serves stale content after deployment. What should be performed?",
+options:[
+"Increase EC2 size",
+"Invalidate the CloudFront cache",
+"Restart Route53",
+"Delete the S3 bucket"
+],
+answer:1,
+explanation:"Invalidation removes cached objects so users receive updated content."
+},
+
+{
+id:148,
+difficulty:"hard",
+category:"aws",
+question:"Which AWS service continuously records API activity for auditing?",
+options:[
+"CloudTrail",
+"CloudWatch",
+"SNS",
+"Inspector"
+],
+answer:0,
+explanation:"CloudTrail records API activity across AWS services for governance and auditing."
+},
+
+{
+id:149,
+difficulty:"hard",
+category:"azure",
+question:"Which Azure service should monitor distributed application dependencies?",
+options:[
+"Application Insights",
+"Blob Storage",
+"Azure DNS",
+"Azure Backup"
+],
+answer:0,
+explanation:"Application Insights provides request, dependency and exception telemetry."
+},
+
+{
+id:150,
+difficulty:"hard",
+category:"security",
+question:"Which authentication method eliminates long-lived access keys for Azure resources?",
+options:[
+"Managed Identity",
+"Shared Access Signature only",
+"Storage Account Keys",
+"Anonymous Access"
+],
+answer:0,
+explanation:"Managed Identity removes the need to store credentials in applications."
+},
+
+{
+id:151,
+difficulty:"hard",
+category:"security",
+question:"Which PCI DSS requirement is satisfied by maintaining centralized audit logs?",
+options:[
+"Requirement 10",
+"Requirement 1",
+"Requirement 3",
+"Requirement 7"
+],
+answer:0,
+explanation:"PCI DSS Requirement 10 focuses on tracking and monitoring access to network resources and cardholder data."
+},
+
+{
+id:152,
+difficulty:"hard",
+category:"rag",
+question:"Users complain that the chatbot frequently answers from irrelevant documents. Which component should be tuned first?",
+options:[
+"LLM temperature",
+"Retriever and chunking strategy",
+"Notebook timeout",
+"GPU memory"
+],
+answer:1,
+explanation:"Poor retrieval quality is often caused by suboptimal chunking or retriever configuration."
+},
+
+{
+id:153,
+difficulty:"hard",
+category:"vector-db",
+question:"Which indexing algorithm is commonly used for approximate nearest-neighbor search?",
+options:[
+"B-Tree",
+"HNSW",
+"Bitmap",
+"Hash Index"
+],
+answer:1,
+explanation:"Hierarchical Navigable Small World (HNSW) is widely used for efficient vector similarity search."
+},
+
+{
+id:154,
+difficulty:"hard",
+category:"ai",
+question:"Which metric is most suitable for evaluating document retrieval quality in a RAG system?",
+options:[
+"CPU Utilization",
+"Recall@K",
+"Heap Size",
+"Notebook Duration"
+],
+answer:1,
+explanation:"Recall@K measures whether relevant documents are retrieved within the top K results."
+},
+
+{
+id:155,
+difficulty:"hard",
+category:"mlops",
+question:"Why is model versioning important in MLflow?",
+options:[
+"Improves SQL performance",
+"Supports reproducibility, rollback and governance",
+"Reduces storage",
+"Speeds up training"
+],
+answer:1,
+explanation:"Model versioning enables traceability, controlled promotion and rollback."
+},
+
+{
+id:156,
+difficulty:"hard",
+category:"devops",
+question:"What is the main benefit of Infrastructure as Code using Terraform?",
+options:[
+"Faster SQL queries",
+"Repeatable and auditable infrastructure provisioning",
+"Lower JVM memory",
+"Improved notebook performance"
+],
+answer:1,
+explanation:"Terraform enables consistent, version-controlled infrastructure deployments."
+},
+
+{
+id:157,
+difficulty:"hard",
+category:"monitoring",
+question:"A dashboard shows increased API latency but stable infrastructure metrics. What is the likely next troubleshooting step?",
+options:[
+"Increase VM size immediately",
+"Review distributed traces for downstream service latency",
+"Restart Kubernetes cluster",
+"Delete logs"
+],
+answer:1,
+explanation:"Latency often originates from downstream dependencies rather than infrastructure saturation."
+},
+
+{
+id:158,
+difficulty:"hard",
+category:"operations",
+question:"Which operational metric best measures pipeline reliability?",
+options:[
+"Developer Count",
+"Pipeline Success Rate",
+"Repository Size",
+"Notebook Count"
+],
+answer:1,
+explanation:"Pipeline success rate directly reflects operational reliability."
+},
+
+{
+id:159,
+difficulty:"hard",
+category:"cost-optimization",
+question:"Which cloud architecture generally minimizes analytics costs?",
+options:[
+"Always-on clusters",
+"Autoscaling compute with object storage",
+"Dedicated VMs for every workload",
+"Largest instance types"
+],
+answer:1,
+explanation:"Separating scalable object storage from elastic compute minimizes idle costs."
+},
+
+{
+id:160,
+difficulty:"hard",
+category:"leadership",
+question:"A business stakeholder requests an unrealistic delivery date. What should a Solution Architect do?",
+options:[
+"Agree immediately",
+"Present technical trade-offs, risks and phased delivery options",
+"Reject the project",
+"Ask developers to work overtime indefinitely"
+],
+answer:1,
+explanation:"Architects should communicate risks transparently and propose achievable implementation strategies."
+}, 
+ {
+id:161,
+difficulty:"hard",
+category:"delta-lake",
+question:"Which mechanism does Delta Lake use to prevent data corruption during concurrent writes?",
+options:[
+"Pessimistic Locking",
+"Optimistic Concurrency Control",
+"Table Locking",
+"Distributed Mutex"
+],
+answer:1,
+explanation:"Delta Lake uses optimistic concurrency control. Conflicting commits are detected during transaction commit rather than locking the table."
+},
+
+{
+id:162,
+difficulty:"hard",
+category:"delta-lake",
+question:"What is stored inside the Delta _delta_log directory?",
+options:[
+"Spark cache",
+"Transaction log JSON and checkpoint files",
+"Python source code",
+"Compressed Parquet files only"
+],
+answer:1,
+explanation:"The transaction log stores every table version, commit information and metadata required for ACID transactions."
+},
+
+{
+id:163,
+difficulty:"hard",
+category:"delta-lake",
+question:"Running VACUUM with an aggressively low retention period can cause which problem?",
+options:[
+"Faster SQL execution",
+"Loss of Time Travel capability",
+"Reduced Spark memory",
+"Improved partition pruning"
+],
+answer:1,
+explanation:"VACUUM permanently removes obsolete files. If retained for too short a period, historical versions become unrecoverable."
+},
+
+{
+id:164,
+difficulty:"hard",
+category:"databricks",
+question:"Which strategy best supports idempotent ETL pipelines?",
+options:[
+"INSERT only",
+"MERGE using business keys",
+"DELETE entire table daily",
+"Append duplicate records"
+],
+answer:1,
+explanation:"MERGE operations using business keys allow safe reruns without creating duplicates."
+},
+
+{
+id:165,
+difficulty:"hard",
+category:"databricks",
+question:"A child notebook succeeds but the parent workflow fails. Which feature helps determine exactly where execution stopped?",
+options:[
+"Notebook comments",
+"Job Run Timeline",
+"Workspace Browser",
+"SQL History"
+],
+answer:1,
+explanation:"The Job Run Timeline provides execution details, dependencies and failures across workflow tasks."
+},
+
+{
+id:166,
+difficulty:"hard",
+category:"kafka",
+question:"Which Kafka delivery guarantee prevents duplicate processing when correctly implemented?",
+options:[
+"At-most-once",
+"Exactly-once",
+"Best-effort",
+"Round Robin"
+],
+answer:1,
+explanation:"Exactly-once semantics combine idempotent producers and transactional processing to avoid duplicates."
+},
+
+{
+id:167,
+difficulty:"hard",
+category:"aws",
+question:"During migration from self-managed Kafka to Amazon MSK, what minimizes downtime?",
+options:[
+"Stop production immediately",
+"Run both clusters in parallel with replication and cut over after validation",
+"Delete the existing cluster",
+"Change topic names during migration"
+],
+answer:1,
+explanation:"A phased migration with replication reduces risk and allows rollback."
+},
+
+{
+id:168,
+difficulty:"hard",
+category:"azure",
+question:"When would Azure Event Hubs be preferred over Kafka?",
+options:[
+"When using Microsoft's managed event streaming ecosystem",
+"When running Oracle databases",
+"For storing backups",
+"For serving static web pages"
+],
+answer:0,
+explanation:"Event Hubs integrates closely with Azure services and provides managed event streaming."
+},
+
+{
+id:169,
+difficulty:"hard",
+category:"bedrock",
+question:"What is a major advantage of Amazon Bedrock compared with self-hosted LLM infrastructure?",
+options:[
+"No prompt engineering required",
+"Managed foundation models without GPU infrastructure management",
+"Unlimited free inference",
+"Automatic application development"
+],
+answer:1,
+explanation:"Bedrock removes operational overhead for hosting and scaling foundation models."
+},
+
+{
+id:170,
+difficulty:"hard",
+category:"ai-security",
+question:"What is Prompt Injection?",
+options:[
+"Compressing prompts",
+"Manipulating an LLM into ignoring intended instructions",
+"Increasing token limits",
+"Encrypting prompts"
+],
+answer:1,
+explanation:"Prompt injection attempts to override or manipulate the model's intended behavior."
+},
+
+{
+id:171,
+difficulty:"hard",
+category:"rag",
+question:"Which mitigation best reduces prompt injection attacks in a RAG system?",
+options:[
+"Increase temperature",
+"Validate retrieved content and separate system prompts from user input",
+"Disable embeddings",
+"Reduce chunk size only"
+],
+answer:1,
+explanation:"Input validation, prompt isolation and content filtering reduce prompt injection risks."
+},
+
+{
+id:172,
+difficulty:"hard",
+category:"vector-db",
+question:"As a vector database grows to billions of embeddings, what becomes increasingly important?",
+options:[
+"Notebook themes",
+"Efficient ANN indexing and sharding",
+"Longer prompts",
+"CSV compression"
+],
+answer:1,
+explanation:"Approximate Nearest Neighbor indexing and sharding are critical for scalability."
+},
+
+{
+id:173,
+difficulty:"hard",
+category:"kubernetes",
+question:"What Kubernetes feature automatically replaces failed containers?",
+options:[
+"ConfigMap",
+"Deployment Controller",
+"Secret",
+"Ingress"
+],
+answer:1,
+explanation:"Deployments continuously monitor pod health and recreate failed instances."
+},
+
+{
+id:174,
+difficulty:"hard",
+category:"kubernetes",
+question:"Which Kubernetes object should store database passwords?",
+options:[
+"ConfigMap",
+"Secret",
+"Deployment",
+"Namespace"
+],
+answer:1,
+explanation:"Sensitive credentials belong in Kubernetes Secrets rather than ConfigMaps."
+},
+
+{
+id:175,
+difficulty:"hard",
+category:"dr",
+question:"Which Disaster Recovery metric defines acceptable data loss?",
+options:[
+"MTTR",
+"RPO",
+"Latency",
+"Throughput"
+],
+answer:1,
+explanation:"Recovery Point Objective (RPO) specifies how much data loss is acceptable."
+},
+
+{
+id:176,
+difficulty:"hard",
+category:"dr",
+question:"Which metric measures acceptable recovery time after a failure?",
+options:[
+"RTO",
+"RPO",
+"TPS",
+"CPU"
+],
+answer:0,
+explanation:"Recovery Time Objective (RTO) defines how quickly services must be restored."
+},
+
+{
+id:177,
+difficulty:"hard",
+category:"architecture",
+question:"Which deployment strategy minimizes production risk during major releases?",
+options:[
+"Big Bang",
+"Blue-Green Deployment",
+"Manual Copy",
+"Weekend Deployment Only"
+],
+answer:1,
+explanation:"Blue-Green deployments enable fast rollback with minimal downtime."
+},
+
+{
+id:178,
+difficulty:"hard",
+category:"architecture",
+question:"What is the primary benefit of a Canary Deployment?",
+options:[
+"Lower storage cost",
+"Gradually expose new releases to a subset of users",
+"Compress Docker images",
+"Increase Spark partitions"
+],
+answer:1,
+explanation:"Canary deployments reduce deployment risk by limiting initial exposure."
+},
+
+{
+id:179,
+difficulty:"hard",
+category:"observability",
+question:"Which practice enables correlation between application logs, metrics and traces?",
+options:[
+"Random request IDs",
+"Correlation IDs",
+"CSV exports",
+"Manual timestamps"
+],
+answer:1,
+explanation:"Correlation IDs allow end-to-end request tracking across distributed services."
+},
+
+{
+id:180,
+difficulty:"hard",
+category:"leadership",
+question:"During an executive architecture review, what should be the primary focus?",
+options:[
+"Framework syntax",
+"Business outcomes, risks, cost, scalability and security",
+"Notebook formatting",
+"Programming language comparisons"
+],
+answer:1,
+explanation:"Senior architects communicate business value and architectural trade-offs rather than low-level implementation details."
+},
+ {
+id:181,
+difficulty:"hard",
+category:"scenario-databricks",
+question:"A Databricks workflow consisting of one parent job and twelve child jobs runs successfully in UAT but intermittently fails in Production. What should be investigated FIRST?",
+options:[
+"Increase cluster size",
+"Review Job Run history, Cluster Event Logs, Driver Logs and failed child task dependencies",
+"Restart the Databricks workspace",
+"Reinstall the Databricks Runtime"
+],
+answer:1,
+explanation:"Start with evidence. Job history, cluster events, driver logs, executor logs and dependency chains usually identify whether the failure is application, infrastructure or orchestration related."
+},
+
+{
+id:182,
+difficulty:"hard",
+category:"scenario-spark",
+question:"A Spark job processing 10GB daily suddenly requires four times more execution time after a new customer was onboarded. The code has not changed. What is the MOST likely cause?",
+options:[
+"Python version changed",
+"Data skew caused by uneven partition distribution",
+"Notebook permissions changed",
+"Delta transaction log corruption"
+],
+answer:1,
+explanation:"Large customers often introduce skew where one partition contains significantly more data than others."
+},
+
+{
+id:183,
+difficulty:"hard",
+category:"scenario-rag",
+question:"Business users report that the chatbot provides different answers to the same question every day. Which component should be investigated first?",
+options:[
+"Notebook execution time",
+"Retriever quality, embedding consistency and document versioning",
+"Driver memory",
+"Delta OPTIMIZE schedule"
+],
+answer:1,
+explanation:"Inconsistent retrieval caused by stale embeddings, document changes or poor chunking commonly results in inconsistent RAG responses."
+},
+
+{
+id:184,
+difficulty:"hard",
+category:"scenario-monitoring",
+question:"A production API response time increased from 200ms to 3 seconds. CPU and memory utilization remain normal. What should be checked first?",
+options:[
+"Upgrade VM size",
+"Distributed tracing to identify slow downstream dependencies",
+"Restart Kubernetes",
+"Increase Spark executors"
+],
+answer:1,
+explanation:"Stable infrastructure metrics suggest latency originates from downstream dependencies, databases or external APIs."
+},
+
+{
+id:185,
+difficulty:"hard",
+category:"scenario-aws",
+question:"A CloudFront distribution serves outdated JavaScript after deployment. Which action should be performed first?",
+options:[
+"Increase EC2 instances",
+"Invalidate the CloudFront cache",
+"Restart Route53",
+"Delete the S3 bucket"
+],
+answer:1,
+explanation:"CloudFront caches content globally. Cache invalidation forces edge locations to retrieve updated files."
+},
+
+{
+id:186,
+difficulty:"hard",
+category:"scenario-bedrock",
+question:"Your organization plans to migrate from locally hosted Llama models to Amazon Bedrock. Which migration strategy minimizes risk?",
+options:[
+"Big Bang migration",
+"Parallel deployment with A/B validation and rollback",
+"Delete local infrastructure immediately",
+"Retrain every model first"
+],
+answer:1,
+explanation:"Parallel deployment enables comparison, rollback and controlled production rollout."
+},
+
+{
+id:187,
+difficulty:"hard",
+category:"scenario-security",
+question:"A PCI DSS audit discovers application credentials stored in a Git repository. What should happen immediately?",
+options:[
+"Ignore because the repository is private",
+"Rotate credentials, remove secrets, migrate to Secrets Manager or Key Vault and audit access",
+"Increase repository permissions",
+"Rename the repository"
+],
+answer:1,
+explanation:"Credentials should be rotated immediately because exposure cannot be ruled out."
+},
+
+{
+id:188,
+difficulty:"hard",
+category:"scenario-cost",
+question:"Monthly Databricks costs have doubled although daily data volume has remained constant. Which area should be reviewed first?",
+options:[
+"Notebook color theme",
+"Cluster utilization, autoscaling settings, idle clusters and job scheduling",
+"Python version",
+"Unity Catalog permissions"
+],
+answer:1,
+explanation:"Idle compute, oversized clusters and disabled auto-termination are common cost drivers."
+},
+
+{
+id:189,
+difficulty:"hard",
+category:"scenario-governance",
+question:"A regulator requests complete lineage showing where customer data originated, how it was transformed and who accessed it. Which capability satisfies this requirement?",
+options:[
+"Spark UI",
+"Unity Catalog or Microsoft Purview",
+"Git History",
+"Notebook comments"
+],
+answer:1,
+explanation:"Enterprise governance platforms provide lineage, metadata, auditing and access tracking."
+},
+
+{
+id:190,
+difficulty:"hard",
+category:"scenario-leadership",
+question:"Business stakeholders request delivery in three months while engineering estimates nine months. What should the Solution Architect do?",
+options:[
+"Promise three months anyway",
+"Present architectural trade-offs, phased delivery and associated risks",
+"Reject the project",
+"Let developers decide"
+],
+answer:1,
+explanation:"Architects facilitate informed decisions by balancing business priorities with technical feasibility."
+},
+
+{
+id:191,
+difficulty:"hard",
+category:"scenario-kafka",
+question:"Consumer lag continues increasing even though Kafka brokers are healthy. What should be investigated first?",
+options:[
+"Producer source code formatting",
+"Consumer processing time, partition count and downstream bottlenecks",
+"Increase topic names",
+"Restart Zookeeper without investigation"
+],
+answer:1,
+explanation:"Lag usually indicates consumers cannot process messages as quickly as producers."
+},
+
+{
+id:192,
+difficulty:"hard",
+category:"scenario-databricks",
+question:"Delta MERGE operations occasionally fail because another pipeline writes simultaneously. Which Delta feature addresses this?",
+options:[
+"VACUUM",
+"Optimistic Concurrency Control",
+"OPTIMIZE",
+"Photon"
+],
+answer:1,
+explanation:"Delta detects conflicting concurrent transactions and maintains ACID consistency."
+},
+
+{
+id:193,
+difficulty:"hard",
+category:"scenario-ai",
+question:"An executive asks why the AI recommendation engine made a particular prediction. Which Responsible AI capability should be available?",
+options:[
+"GPU Monitoring",
+"Model Explainability",
+"Notebook Versioning",
+"Cluster Policies"
+],
+answer:1,
+explanation:"Explainability provides transparency into model predictions."
+},
+
+{
+id:194,
+difficulty:"hard",
+category:"scenario-devops",
+question:"A production deployment fails halfway through. Which deployment strategy enables the fastest rollback?",
+options:[
+"Manual Deployment",
+"Blue-Green Deployment",
+"FTP Upload",
+"Single Server Deployment"
+],
+answer:1,
+explanation:"Blue-Green deployments enable rapid rollback by switching traffic back to the previous environment."
+},
+
+{
+id:195,
+difficulty:"hard",
+category:"scenario-observability",
+question:"Which telemetry signal most accurately identifies where latency occurs inside a distributed microservice architecture?",
+options:[
+"CPU %",
+"Distributed Trace",
+"Disk Space",
+"Application Version"
+],
+answer:1,
+explanation:"Distributed traces visualize request flow and latency across every service."
+},
+
+{
+id:196,
+difficulty:"hard",
+category:"scenario-dr",
+question:"A business requires less than five minutes of data loss after a disaster. Which DR metric defines this requirement?",
+options:[
+"RTO",
+"RPO",
+"MTTR",
+"SLA"
+],
+answer:1,
+explanation:"Recovery Point Objective specifies the maximum acceptable data loss."
+},
+
+{
+id:197,
+difficulty:"hard",
+category:"scenario-performance",
+question:"SQL queries against Delta tables become progressively slower despite constant hardware resources. Which maintenance task is commonly forgotten?",
+options:[
+"VACUUM only",
+"OPTIMIZE and statistics maintenance",
+"Restart notebooks",
+"Increase driver memory"
+],
+answer:1,
+explanation:"Compaction and updated statistics improve query planning and reduce file scans."
+},
+
+{
+id:198,
+difficulty:"hard",
+category:"scenario-architecture",
+question:"An enterprise wants to support batch analytics, real-time dashboards and Generative AI using the same data platform. Which architecture best fits?",
+options:[
+"Traditional OLTP Database",
+"Lakehouse Architecture",
+"Desktop Database",
+"Shared File Server"
+],
+answer:1,
+explanation:"A Lakehouse supports BI, streaming, AI and ML workloads from a unified data platform."
+},
+
+{
+id:199,
+difficulty:"hard",
+category:"scenario-cloud",
+question:"Your company wants to migrate workloads from on-premises to AWS while minimizing operational overhead. Which architectural principle is most appropriate?",
+options:[
+"Lift-and-shift every server unchanged",
+"Adopt managed cloud-native services where practical",
+"Replace every application immediately",
+"Run everything on EC2"
+],
+answer:1,
+explanation:"Managed services such as S3, MSK, Bedrock and RDS reduce operational complexity and improve scalability."
+},
+
+{
+id:200,
+difficulty:"hard",
+category:"scenario-executive",
+question:"During the final interview, the CIO asks: 'What makes a good Solution Architect?' Which answer is strongest?",
+options:[
+"Writes the most code",
+"Knows every programming language",
+"Balances business value, scalability, security, governance, reliability, cost and operational excellence while leading technical decisions",
+"Builds dashboards quickly"
+],
+answer:2,
+explanation:"At the architect level, success is measured by making sound technology decisions that deliver sustainable business outcomes, not by writing the most code."
+},
 ];
 
 
