@@ -1,4 +1,5 @@
 # 🚀 Java Spring Boot Interview & Coding Prep README
+<img width="1024" height="1536" alt="17856023393923422545792866419127" src="https://github.com/user-attachments/assets/427bce96-a44a-4087-a22f-c4f4ed4c5408" />
 
 ### 📘 Quick Reference (LeetCode + Microservices + REST APIs)
 
