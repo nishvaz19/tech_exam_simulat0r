@@ -1,4 +1,5 @@
 # 🚨 **Sr. DevOps + Observability Architect — Real Failure Scenarios**
+<img width="1024" height="1536" alt="17856049524256395563944712381193" src="https://github.com/user-attachments/assets/4ca87ded-37f5-47f1-a108-b074d731193c" />
 
 This is structured like:
 👉 **Symptom → Signals → Root Cause → Fix → Prevention (Architect answer)**
