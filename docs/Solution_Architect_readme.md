@@ -7,6 +7,7 @@ This is your **mental model + buzzword map** to handle:
 * System design rounds
 * Architecture deep-dives
 * Trade-off discussions
+<img width="1536" height="1024" alt="17855919235098371214379596957621" src="https://github.com/user-attachments/assets/46192cec-bf45-4c6d-ab4d-2ab07621a2ef" />
 
 ---
 
