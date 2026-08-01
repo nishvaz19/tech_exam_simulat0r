@@ -1,4 +1,5 @@
 # 🚀 AWS Senior Architect & DevOps README
+<img width="1024" height="1536" alt="178560287058285490286687875830" src="https://github.com/user-attachments/assets/8e90bb86-3cec-401a-8270-c64c84e547bf" />
 
 ### 📘 Quick Reference (The Resource Hierarchy)
 
