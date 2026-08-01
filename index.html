@@ -654,7 +654,7 @@ window.onclick = function(event) {
 const docMap = {
     
   "ai_data-cloud": {
-    file: "docs/AI_Data_Solution_Architect_readme.md", // or ai_llm_readme.md if you create later
+    file: "docs/Databricks_pySpark_readme.md", 
     title: "AI and Data Technologies Architecture"
   },
   "react-cloud": {
@@ -1396,7 +1396,7 @@ const eaKeywords = [
     // Initialize all
     document.addEventListener('DOMContentLoaded', () => {
         // Render
-       renderCloud("aiDataCloud", [...aiKeywords, ...dataArchitectKeywords], "ai_data"); 
+       renderCloud("aiDataCloud", dataArchitectKeywords, "ai_data"); //[...aiKeywords, ...dataArchitectKeywords]
         renderCloud("dbCloud", dbKeywords, "databricks");
         renderCloud("aiCloud", aiKeywords, "ai");
         renderCloud("javaCloud", javaKeywords, "java");
@@ -1421,7 +1421,7 @@ const eaKeywords = [
             });
         };
         // Search Binding
-        bindSearch("aiDataSearch", "aiDataCloud", [...aiKeywords, ...dataArchitectKeywords], "ai_data");
+        bindSearch("aiDataSearch", "aiDataCloud", dataArchitectKeywords, "ai_data");//[...aiKeywords, ...dataArchitectKeywords]
         bindSearch("dbSearch", "dbCloud", dbKeywords, "databricks");
         bindSearch("aiSearch", "aiCloud", aiKeywords, "ai");
         bindSearch("javaSearch", "javaCloud", javaKeywords, "java");
