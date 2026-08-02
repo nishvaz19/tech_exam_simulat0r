@@ -1,6 +1,6 @@
 # 🏛️ Enterprise Architecture (EA) Strategy README
 
-![17856388798141204581767461686674](assets/Enterprise Architect.png)
+![17856388798141204581767461686674](./assets/Enterprise%20Architect.png)
 
 <img width="1024" height="1536" alt="17856388798141204581767461686674" src="../assets/Enterprise Architect.png" />
 
