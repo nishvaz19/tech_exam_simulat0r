@@ -1,5 +1,5 @@
 # ☁️ Azure Cloud Interview & Architecture README
-<img width="1024" height="1536" alt="17856033139527974498568225612623" src="https://github.com/user-attachments/assets/845c4156-7d9b-4be8-9bad-492a3d3f9a67" />
+<img width="1024" height="1536" alt="17856033139527974498568225612623" src="../assets/Azure_SrArchitect.png" />
 
 ### 📘 Quick Reference (Enterprise Integration + Identity + Hybrid Cloud + DevOps)
 
