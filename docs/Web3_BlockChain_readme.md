@@ -1,6 +1,6 @@
 
 # Technical Architect’s Guide: Web2 to Web3 Transition
-<img width="1024" height="1536" alt="17856395500817673884429703301636" src="https://github.com/user-attachments/assets/24687749-dc36-41d9-be27-21dc72d981e6" />
+<img width="1024" height="1536" alt="17856395500817673884429703301636" src="../assets/Web3_BlockChain.png" />
 
 This documentation serves as a strategic bridge for Technical Architects moving from traditional enterprise environments (Fintech, Core Banking) to Decentralized Finance (DeFi) and Blockchain ecosystems.
 
