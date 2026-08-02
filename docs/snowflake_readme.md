@@ -1,4 +1,7 @@
 # ❄️ Snowflake Interview & Architecture README
+
+![17856041843561348245958413267050](./assets/Snowflake.png)
+
 <img width="1024" height="1536" alt="17856041843561348245958413267050" src="../assets/Snowflake.png" />
 
 ### 📘 Quick Reference (Cloud Data Warehouse + Elastic Scaling + Separation of Compute/Storage)
