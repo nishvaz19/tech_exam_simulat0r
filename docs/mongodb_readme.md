@@ -1,4 +1,7 @@
 # 🚀 MongoDB Interview & Architecture README
+
+![17856386555678528180101880048401](./assets/MongoDB.png)
+
 <img width="1024" height="1536" alt="17856386555678528180101880048401" src="../assets/MongoDB.png" />
 
 
