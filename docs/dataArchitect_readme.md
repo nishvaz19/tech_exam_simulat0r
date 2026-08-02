@@ -1,4 +1,5 @@
 # 🚀 Data Architect Interview & Architecture README
+<img width="1024" height="1536" alt="17856370983708256568542791092844" src="https://github.com/user-attachments/assets/48c3f9bc-cf79-4122-a5e1-db4aaf0130b1" />
 
 ### 📘 Quick Reference (The Data Lifecycle)
 
