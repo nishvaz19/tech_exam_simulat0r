@@ -1,6 +1,6 @@
 # 🚀 Data Architect Interview & Architecture README
 
-![17856370983708256568542791092844](assets/data Architect.png)
+![17856370983708256568542791092844](./assets/data%20Architect.png)
 
 <img width="1024" height="1536" alt="17856370983708256568542791092844" src="../assets/data Architect.png" />
 
