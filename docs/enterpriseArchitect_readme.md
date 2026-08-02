@@ -1,4 +1,5 @@
 # 🏛️ Enterprise Architecture (EA) Strategy README
+<img width="1024" height="1536" alt="17856388798141204581767461686674" src="https://github.com/user-attachments/assets/56e29e28-1009-4595-a3be-33da96cf4345" />
 
 ### 📘 Quick Reference (TOGAF + Cloud-Native + Governance + Interoperability)
 
