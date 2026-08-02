@@ -1,5 +1,5 @@
 # 🚀 MongoDB Interview & Architecture README
-<img width="1024" height="1536" alt="17856386555678528180101880048401" src="https://github.com/user-attachments/assets/f93dbac0-0af6-4ab5-b341-6bf1ee3a9206" />
+<img width="1024" height="1536" alt="17856386555678528180101880048401" src="../assets/MongoDB.png" />
 
 
 ### 📘 Quick Reference (Distributed Documents + High Availability + Scalability)
