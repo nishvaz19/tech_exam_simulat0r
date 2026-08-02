@@ -1,6 +1,6 @@
 # 🚀 Databricks Medallion Architecture (Bronze → Silver → Gold)
 
-<img width="1024" height="1536" alt="17856018188417685215415841884740" src="../assets/Databricks Medallion Architecture.png" />
+<img width="1024" height="1536" alt="17856018188417685215415841884740" src="../assets/Databricks%20Medallion%20Architecture.png" />
 
 ### 📘 Interview & Exam Quick Reference (Delta Lake + PySpark)
 
