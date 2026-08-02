@@ -1,4 +1,7 @@
 # 🚀 Kafka Interview & Architecture README
+
+![17856040057501196294325712630112](./assets/kafka.png)
+
 <img width="1024" height="1536" alt="17856040057501196294325712630112" src="../assets/kafka.png" />
 
 ### 📘 Quick Reference (Distributed Streaming + Reliability + Chaos Handling)
