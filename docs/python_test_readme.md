@@ -1,6 +1,6 @@
 
 # Algorithm Complexity Analysis (Python Solutions Guide)
-<img width="1024" height="1536" alt="17856035100463924647405069389957" src="https://github.com/user-attachments/assets/d4e2efc9-1aec-49d4-8f28-b3211d963dfd" />
+<img width="1024" height="1536" alt="17856035100463924647405069389957" src="../assets/Python_exam.png" />
 
 This document provides **questions, logic, implementations, and Big O analysis** for a 20-problem set.  
 Designed for high-level engineering assessments (e.g., Crossover-style tests).
