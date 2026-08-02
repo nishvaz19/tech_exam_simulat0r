@@ -1,6 +1,6 @@
 # 🚀 Databricks Medallion Architecture (Bronze → Silver → Gold)
 
-<img width="1024" height="1536" alt="17856018188417685215415841884740" src="assets/Databricks%20Medallion%20Architecture.png" onerror="alert('--- Debug Info ---\n\nWritten Path: ' + this.getAttribute('src') + '\n\nResolved URL: ' + this.src + '\n\nIf this URL gives a 404, check if the folder is named \'Assets\' instead of \'assets\', or if the file name has different capitalization.')" />
+<img width="1024" height="1536" alt="17856018188417685215415841884740" src="assets/Databricks Medallion Architecture.png" />
 
 ### 📘 Interview & Exam Quick Reference (Delta Lake + PySpark)
 
