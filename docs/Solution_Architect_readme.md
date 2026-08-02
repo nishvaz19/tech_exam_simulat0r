@@ -1,4 +1,5 @@
 # 🚀 Senior Architect Interview & System Design README
+![17856021259072579510415346777665](assets/SrArchitect.png)
 <img width="1024" height="1536" alt="17856021259072579510415346777665" src="../assets/SrArchitect.png" />
 
 ### 📘 Quick Reference (System Design + Microservices + Cloud + Reliability)
