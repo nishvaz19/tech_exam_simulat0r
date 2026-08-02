@@ -1,5 +1,7 @@
-
 # Algorithm Complexity Analysis (Python Solutions Guide)
+
+![17856035100463924647405069389957](./assets/Python_exam.png)
+
 <img width="1024" height="1536" alt="17856035100463924647405069389957" src="../assets/Python_exam.png" />
 
 This document provides **questions, logic, implementations, and Big O analysis** for a 20-problem set.  
