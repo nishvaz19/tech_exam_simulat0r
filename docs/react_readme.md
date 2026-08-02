@@ -1,5 +1,5 @@
 # 🚀 React Interview & Frontend Prep README
-<img width="1024" height="1536" alt="17856391050791465258704092431306" src="https://github.com/user-attachments/assets/48ccd884-1f82-49d8-b9de-b01b0061bdd5" />
+<img width="1024" height="1536" alt="17856391050791465258704092431306" src="../assets/React.png" />
 
 ### 📘 Quick Reference (React + Vite + Ant Design + Enterprise UI)
 
