@@ -1,5 +1,5 @@
 # 🚀 NestJS – Complete Interview & Architecture Guide (2026)
-<img width="1024" height="1536" alt="17856392711787349495618933068711" src="https://github.com/user-attachments/assets/9306f14e-7be5-4b6c-bee6-6b5e7dfa1478" />
+<img width="1024" height="1536" alt="17856392711787349495618933068711" src="../assets/Nestjs.png" />
 
 NestJS has become a dominant force in the Node.js ecosystem because it solves the **"Wild West" problem** of backend development.
 
