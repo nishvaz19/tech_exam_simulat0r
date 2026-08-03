@@ -3011,31 +3011,435 @@ options:[
 answer:2,
 explanation:"At the architect level, success is measured by making sound technology decisions that deliver sustainable business outcomes, not by writing the most code."
 },
+ {
+id:201,
+difficulty:"medium",
+category:"agentic-ai",
+question:"What is the defining characteristic of an Agentic AI system compared to a traditional chatbot?",
+options:[
+"Uses larger GPUs",
+"Can autonomously plan, reason and execute multi-step tasks using tools",
+"Only answers predefined FAQs",
+"Stores data in a relational database"
+],
+answer:1,
+explanation:"Agentic AI systems use planning, memory and tool invocation to accomplish goals with minimal human intervention."
+},
+
+{
+id:202,
+difficulty:"hard",
+category:"agentic-ai",
+question:"Which architectural component is responsible for determining the next action an AI agent should take?",
+options:[
+"Embedding Model",
+"Planner or Orchestrator",
+"Vector Database",
+"Tokenizer"
+],
+answer:1,
+explanation:"The planner evaluates the current state, available tools and objectives before selecting the next action."
+},
+
+{
+id:203,
+difficulty:"hard",
+category:"langgraph",
+question:"What is the primary benefit of using LangGraph instead of a simple LangChain sequential workflow?",
+options:[
+"Lower GPU utilization",
+"Supports stateful, cyclic and multi-agent workflows",
+"Stores embeddings automatically",
+"Replaces vector databases"
+],
+answer:1,
+explanation:"LangGraph enables graph-based execution with loops, conditional routing and persistent state, making it suitable for complex agent orchestration."
+},
+
+{
+id:204,
+difficulty:"hard",
+category:"langgraph",
+question:"Which LangGraph feature enables an agent to resume execution after interruption?",
+options:[
+"Checkpointing and State Persistence",
+"Vector Search",
+"Prompt Compression",
+"Function Calling"
+],
+answer:0,
+explanation:"Checkpointing allows workflows to persist execution state and continue from the last successful node."
+},
+
+{
+id:205,
+difficulty:"hard",
+category:"knowledge-graph",
+question:"What is the primary purpose of a Knowledge Graph in enterprise AI?",
+options:[
+"Store embeddings",
+"Represent entities and relationships for semantic reasoning",
+"Replace SQL databases",
+"Compress documents"
+],
+answer:1,
+explanation:"Knowledge Graphs model entities and their relationships, enabling semantic search, reasoning and contextual understanding."
+},
+
+{
+id:206,
+difficulty:"hard",
+category:"graph-rag",
+question:"How does Graph RAG improve upon traditional vector-based RAG?",
+options:[
+"Uses larger embeddings",
+"Combines graph relationships with semantic retrieval for better contextual reasoning",
+"Requires no LLM",
+"Only supports structured data"
+],
+answer:1,
+explanation:"Graph RAG augments vector retrieval with relationship traversal, improving multi-hop reasoning and contextual accuracy."
+},
+
+{
+id:207,
+difficulty:"hard",
+category:"graph-rag",
+question:"Which enterprise scenario benefits most from Graph RAG?",
+options:[
+"Image classification",
+"Fraud investigation involving interconnected customers, accounts and transactions",
+"Spreadsheet formatting",
+"Video transcoding"
+],
+answer:1,
+explanation:"Graph RAG excels when answers depend on traversing complex relationships across connected entities."
+},
+
+{
+id:208,
+difficulty:"medium",
+category:"azure-ai-foundry",
+question:"What is the primary purpose of Azure AI Foundry?",
+options:[
+"Cloud storage management",
+"Develop, evaluate, deploy and govern enterprise AI applications",
+"Virtual machine provisioning",
+"SQL query optimization"
+],
+answer:1,
+explanation:"Azure AI Foundry provides an integrated environment for building, evaluating and governing generative AI solutions."
+},
+
+{
+id:209,
+difficulty:"hard",
+category:"azure-ai-foundry",
+question:"Which capability in Azure AI Foundry helps evaluate prompt quality and AI safety before production deployment?",
+options:[
+"Cluster Pools",
+"Evaluation and Safety Framework",
+"Blob Lifecycle Policies",
+"Azure Backup"
+],
+answer:1,
+explanation:"AI evaluations measure quality, groundedness, relevance and safety before production rollout."
+},
+
+{
+id:210,
+difficulty:"hard",
+category:"maf",
+question:"Within Microsoft's AI Framework (MAF), what is a key architectural principle?",
+options:[
+"Use a single monolithic model",
+"Adopt responsible, secure and governed AI throughout the lifecycle",
+"Disable human oversight",
+"Store prompts in source code"
+],
+answer:1,
+explanation:"MAF emphasizes Responsible AI, governance, security, monitoring and lifecycle management."
+},
+
+{
+id:211,
+difficulty:"hard",
+category:"agentic-architecture",
+question:"Which architectural pattern best supports multiple AI agents collaborating to solve a complex business problem?",
+options:[
+"Single Prompt Architecture",
+"Multi-Agent Orchestration",
+"Static Rule Engine",
+"Client-Server"
+],
+answer:1,
+explanation:"Multi-agent architectures assign specialized responsibilities to collaborating agents coordinated by an orchestrator."
+},
+
+{
+id:212,
+difficulty:"hard",
+category:"agentic-architecture",
+question:"An AI travel assistant must search flights, compare hotels, calculate costs and book reservations. Which architecture is most appropriate?",
+options:[
+"Single LLM Prompt",
+"Agentic Workflow with Planner, Memory and Tool Calling",
+"SQL Stored Procedure",
+"Batch ETL Pipeline"
+],
+answer:1,
+explanation:"Complex goal-driven workflows require planning, tool execution and memory rather than a single prompt."
+},
+
+{
+id:213,
+difficulty:"medium",
+category:"llm",
+question:"Which technique adapts an existing LLM to a specific enterprise domain without training from scratch?",
+options:[
+"Normalization",
+"Fine-tuning",
+"Index Rebuilding",
+"Hashing"
+],
+answer:1,
+explanation:"Fine-tuning specializes a pretrained model using domain-specific datasets."
+},
+
+{
+id:214,
+difficulty:"hard",
+category:"llm",
+question:"When should RAG generally be preferred over fine-tuning?",
+options:[
+"When enterprise knowledge changes frequently",
+"When changing the model architecture",
+"When increasing GPU memory",
+"When compressing prompts"
+],
+answer:0,
+explanation:"RAG keeps knowledge external, allowing updates without retraining the model."
+},
+
+{
+id:215,
+difficulty:"hard",
+category:"slm",
+question:"What is the primary advantage of a Small Language Model (SLM) over a Large Language Model (LLM)?",
+options:[
+"Higher training cost",
+"Lower latency and reduced infrastructure requirements",
+"Unlimited context window",
+"Better performance on every benchmark"
+],
+answer:1,
+explanation:"SLMs are optimized for cost, speed and edge deployment while sacrificing some general reasoning capability."
+},
+
+{
+id:216,
+difficulty:"hard",
+category:"slm",
+question:"Which enterprise scenario is best suited for deploying an SLM instead of an LLM?",
+options:[
+"General-purpose internet search",
+"On-device customer support with strict latency and privacy requirements",
+"Training foundation models",
+"Generating large synthetic datasets"
+],
+answer:1,
+explanation:"SLMs are ideal for edge, mobile and privacy-sensitive applications requiring low latency."
+},
+
+{
+id:217,
+difficulty:"hard",
+category:"analytics-architecture",
+question:"An enterprise wants AI agents to analyze KPIs, explain anomalies and recommend actions automatically. Which architecture best fits?",
+options:[
+"Traditional BI Dashboard",
+"Lakehouse + Semantic Layer + Agentic AI + Knowledge Graph",
+"Desktop Database",
+"Spreadsheet Macros"
+],
+answer:1,
+explanation:"Combining governed analytics with Agentic AI and semantic knowledge enables intelligent business decision support."
+},
+
+{
+id:218,
+difficulty:"hard",
+category:"agentic-ai",
+question:"What is the biggest governance concern when deploying autonomous AI agents in production?",
+options:[
+"GPU utilization",
+"Tool access, auditability and human oversight",
+"Notebook themes",
+"Programming language selection"
+],
+answer:1,
+explanation:"Autonomous agents require strict governance, permissions, monitoring and human approval for critical actions."
+},
+
+{
+id:219,
+difficulty:"hard",
+category:"agentic-ai",
+question:"Which KPI best measures the effectiveness of an Agentic AI solution?",
+options:[
+"Prompt length",
+"Task Completion Rate with Human Intervention",
+"GPU Temperature",
+"Notebook Count"
+],
+answer:1,
+explanation:"Agentic systems are evaluated based on successful autonomous task completion, quality and operational efficiency."
+},
+
+{
+id:220,
+difficulty:"hard",
+category:"agentic-ai",
+question:"What distinguishes an Agentic AI Architect from a traditional AI Solution Architect?",
+options:[
+"Uses only larger models",
+"Designs autonomous, tool-enabled, governed multi-agent systems aligned with enterprise objectives",
+"Focuses only on data pipelines",
+"Builds dashboards exclusively"
+],
+answer:1,
+explanation:"An Agentic AI Architect designs end-to-end autonomous AI ecosystems, including orchestration, memory, governance, reasoning and enterprise integration."
+},
 ];
 
 // --- TOP 100 INTERVIEW INDICES ---
 // These indices point to high-value interview questions from the AI & Data Technologies bank.
 // IMPORTANT: These are ZERO-BASED ARRAY INDICES (not question IDs).
 
+// ======================================================
+// HOT INTERVIEW QUESTIONS (Priority Ordered)
+// The first 20 questions are the MUST-KNOW questions.
+// ======================================================
+
 const hotsQuestions = [
-    // Core AI & Data Fundamentals (0-19)
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
-    10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
 
-    // Data Engineering & Architecture (20-39)
-    20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
-    30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+    // ==================================================
+    // TIER 1 - MUST KNOW (Highest Priority)
+    // ==================================================
+    220, // Agentic AI Architect vs Solution Architect
+    212, // Agentic Workflow Architecture
+    208, // Azure AI Foundry
+    210, // Microsoft AI Framework (MAF)
+    206, // Graph RAG
+    217, // Analytics + Agentic AI Architecture
+    200, // CIO Final Interview
+    199, // Cloud-Native Migration Strategy
+    198, // Modern Lakehouse Architecture
+    193, // Responsible AI & Explainability
+    190, // Stakeholder Management
+    189, // Data Governance & Purview
+    188, // Databricks Cost Optimization
+    183, // RAG Hallucinations & Inconsistent Answers
+    181, // Production Databricks Failure
+    145, // Medallion Architecture
+    140, // Event-Driven Architecture
+    130, // High Availability Design
+    120, // Enterprise AI Platform KPI
+    100, // What makes a great Solution Architect?
 
-    // AI / ML / Analytics (40-59)
-    40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
-    50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+    // ==================================================
+    // TIER 2 - HOT ENTERPRISE ARCHITECTURE
+    // ==================================================
+    201,
+    202,
+    203,
+    204,
+    205,
+    207,
+    209,
+    211,
+    213,
+    214,
+    215,
+    216,
+    218,
+    219,
+    177,
+    178,
+    180,
+    194,
+    195,
+    196,
+    197,
 
-    // Cloud, Governance & Big Data (60-79)
-    60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
-    70, 71, 72, 73, 74, 75, 76, 77, 78, 79,
+    // ==================================================
+    // CLOUD & PLATFORM
+    // ==================================================
+    101,102,103,
+    108,109,110,111,
+    112,113,
+    125,126,127,128,129,
+    131,132,
+    133,134,
+    141,142,
+    147,148,
+    149,
+    164,165,
+    167,169,
 
-    // Advanced Enterprise AI & Data Platform (80-99)
-    80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
-    90, 91, 92, 93, 94, 95, 96, 97, 98, 99
+    // ==================================================
+    // DATABRICKS / SPARK
+    // ==================================================
+    35,36,37,38,40,
+    41,42,43,44,45,46,
+    47,48,49,50,
+    81,82,83,
+    84,85,
+    104,105,106,107,
+    121,122,123,124,
+    143,144,
+    182,
+    192,
+
+    // ==================================================
+    // AI / ML / LLM
+    // ==================================================
+    65,66,67,68,
+    69,70,
+    71,72,
+    73,74,
+    90,
+    118,119,
+    152,153,154,
+    170,171,172,
+
+    // ==================================================
+    // SECURITY / GOVERNANCE
+    // ==================================================
+    86,87,88,89,
+    116,117,
+    150,151,
+    187,
+
+    // ==================================================
+    // OPERATIONS / OBSERVABILITY
+    // ==================================================
+    76,77,78,79,
+    94,95,
+    114,115,
+    137,138,
+    157,158,
+    179,
+
+    // ==================================================
+    // FOUNDATIONS (Still Important)
+    // ==================================================
+    0,3,6,7,8,
+    10,11,13,15,
+    20,21,22,24,25,26,27,28,30,
+    51,52,53,54,55,
+    57,58,59,60,61,62,
+    75,92,93,98,99,
+    135,136,
+    160
 ];
-
